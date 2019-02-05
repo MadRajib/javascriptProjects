@@ -1,0 +1,26 @@
+<html>
+<head>
+	<style type="text/css">html,body{margin:0px;background:#222;}canvas{display:block;}</style>
+</head>
+<body><canvas id='_c'></canvas>
+<script type="text/javascript">
+	window.onload = function(){
+		c=document.getElementById('_c');
+		cx=c.getContext('2d');
+		w=c.width=window.innerWidth;
+		h=c.height=window.innerHeight;
+
+		function r(){
+			cx.font ="48px serif";
+			cx.fillStyle ="#fff";
+			cx.fillText('Hello World',10,50);
+
+			requestAnimationFrame(r);
+		}
+		r();
+	}
+
+
+</script>
+
+</body></html>
